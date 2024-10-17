@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            height: 500px;
+            position: relative;
+        }
+        .carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .carousel .prev, .carousel .next {
+            position: absolute;
+            top: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 30%;
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+        }
+        .product-card p {
+            color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fashion Store</h1>
+    </header>
+
+    <nav>
+        <a href="#">Uomo</a>
+        <a href="#">Donna</a>
+        <a href="#">Bambini</a>
+        <a href="#">Accessori</a>
+        <a href="#">Saldi</a>
+    </nav>
+
+    <!-- Carosello immagini -->
+    <div class="carousel">
+        <img src="https://example.com/fashion1.jpg" alt="Moda 1">
+        <img src="https://example.com/fashion2.jpg" alt="Moda 2">
+        <div class="prev">&#10094;</div>
+        <div class="next">&#10095;</div>
+    </div>
+
+    <!-- Prodotti principali -->
+    <div class="products">
+        <div class="product-card">
+            <img src="https://example.com/shirt.jpg" alt="Maglietta">
+            <h3>Maglietta Uomo</h3>
+            <p>Prezzo: €49.99</p>
+        </div>
+        <div class="product-card">
+            <img src="https://example.com/shoes.jpg" alt="Scarpe">
+            <h3>Scarpe Sportive</h3>
+            <p>Prezzo: €79.99</p>
+        </div>
+        <div class="product-card">
+            <img src="https://example.com/jacket.jpg" alt="Giacca">
+            <h3>Giacca Uomo</h3>
+            <p>Prezzo: €129.99</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fashion Store. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
